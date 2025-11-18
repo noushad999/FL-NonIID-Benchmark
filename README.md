@@ -140,7 +140,7 @@ I actively welcome feedback from the research community\!
 
   * **Found a bug?** Open an [Issue](https://www.google.com/search?q=https://github.com/noushad999/FL-NonIID-Benchmark/issues).
   * **Have an idea?** Fork the repo and submit a Pull Request.
-  * **Just want to say hi?** Connect with me on [LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/noushad-jahan-ramim/).
+  * **Just want to say hi?** Connect with me on [LinkedIn](https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH26n5z8YIG6QAAAZqWqt8gcm-nTro5Ayu-P1gU0ZgmAhhXtLtf5Vn-qm23LlggN6aAODkPfp_A9vFWjViks6CszGm7pEBbr8xXDm6sOG172wnJv6DqIO7IiC5tUlaWdX4z9hw=&original_referer=&sessionRedirect=https%3A%2F%2Fbd.linkedin.com%2Fin%2Fiamnoushad).
 
 -----
 
