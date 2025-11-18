@@ -15,7 +15,51 @@
 </p>
 
 ---
+# FL-NonIID-Benchmark
 
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2463EB&width=435&lines=Federated+Learning+Benchmark;FedProx+vs.+FedAvg;Non-IID+Data+Analysis;Cost+of+Privacy+Quantified" alt="Typing SVG" />
+  </a>
+</div>
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/noushad999/FL-NonIID-Benchmark/blob/main/FL_NonIID_Benchmark.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+  </a>
+  <img alt="GitHub License" src="https://img.shields.io/github/license/noushad999/FL-NonIID-Benchmark?style=social">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/noushad999/FL-NonIID-Benchmark?style=social">
+</p>
+
+---
+
+## 📖 What is this Project? (The "Why")
+
+This project builds a **Privacy-Preserving AI System** designed to detect cyber-attacks in **IoT (Internet of Things)** networks (like smart home devices, sensors, etc.).
+
+In the real world, collecting sensitive data from millions of user devices to a central server is a huge privacy risk. **Federated Learning (FL)** solves this by training the AI *on the device itself*, so raw data never leaves the user's phone or sensor.
+
+**But there is a catch:** Real-world data is messy (**Non-IID**).
+* Device A might only see "DDoS Attacks".
+* Device B might only see "Normal Traffic".
+
+Standard FL algorithms fail in this chaotic environment. This project **benchmarks and solves** that failure, identifying exactly which algorithms work when data is scattered and messy.
+
+---
+
+### 🧠 The Challenge: "Chaos vs. Consensus"
+This project stress-tests Federated Learning (FL) to answer a critical question: **When should we use `FedProx` over `FedAvg`, and what is the *true* cost of privacy?**
+
+I built a comprehensive PyTorch benchmark analyzing **Non-IID data** (Dirichlet distribution) on the TON_IoT dataset.
+
+### 📊 Live Visualization: The "Tipping Point"
+Watch how **FedProx** (Green) successfully learns in an extreme Non-IID environment ($\alpha=0.1$), while the standard **FedAvg** (Red) struggles to converge.
+
+<p align="center">
+  <img src="images/training_comparison_fixed.gif" alt="Live Training Comparison" width="700">
+</p>
+
+---
 ### 🧠 The Challenge: "Chaos vs. Consensus"
 This project stress-tests Federated Learning (FL) to answer a critical question: **When should we use `FedProx` over `FedAvg`, and what is the *true* cost of privacy?**
 
