@@ -98,6 +98,7 @@ jupyter notebook FL_NonIID_Benchmark.ipynb
 
 \<details\>
 \<summary\>Click to expand directory tree\</summary\>
+\</details\>
 
 ```
 FL-NonIID-Benchmark/
@@ -113,7 +114,7 @@ FL-NonIID-Benchmark/
     └── findings_table.png      # (Optional) Add if you have a screenshot of the table
 ```
 
-\</details\>
+
 
 -----
 
