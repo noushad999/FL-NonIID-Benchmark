@@ -25,7 +25,7 @@ I built a comprehensive PyTorch benchmark analyzing **Non-IID data** (Dirichlet 
 Watch how **FedProx** (Green) successfully learns in an extreme Non-IID environment ($\alpha=0.1$), while the standard **FedAvg** (Red) struggles to converge.
 
 <p align="center">
-  <img src="images/training_comparison_fixed.gif" alt="Live Training Comparison" width="700">
+  <img src="images/training_comparison.gif" alt="Live Training Comparison" width="700">
 </p>
 
 ---
@@ -86,7 +86,7 @@ FL-NonIID-Benchmark/
 ├── README.md                   # Project Documentation
 │
 └── images/
-    ├── training_comparison_fixed.gif  # Animation
+    ├── training_comparison.gif  # Animation
     └── findings_table.png             # Summary Table (Optional)
 ```
 
