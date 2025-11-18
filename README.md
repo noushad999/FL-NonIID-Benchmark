@@ -1,3 +1,4 @@
+
 # FL-NonIID-Benchmark
 
 <div align="center">
@@ -109,7 +110,7 @@ FL-NonIID-Benchmark/
 │
 └── images/                     # 🎨 Assets
     ├── training_comparison_fixed.gif
-    └── findings_table.png
+    └── findings_table.png      # (Optional) Add if you have a screenshot of the table
 ```
 
 \</details\>
@@ -139,7 +140,7 @@ I actively welcome feedback from the research community\!
 
   * **Found a bug?** Open an [Issue](https://www.google.com/search?q=https://github.com/noushad999/FL-NonIID-Benchmark/issues).
   * **Have an idea?** Fork the repo and submit a Pull Request.
-  * **Just want to say hi?** Connect with me on [LinkedIn](https://linkedin.com/in/your-profile).
+  * **Just want to say hi?** Connect with me on [LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/noushad-jahan-ramim/).
 
 -----
 
@@ -147,4 +148,5 @@ I actively welcome feedback from the research community\!
 \<sub\>Built with ❤️ by \<a href="https://www.google.com/search?q=https://github.com/noushad999"\>Noushad Jahan Ramim\</a\> using PyTorch & XGBoost\</sub\>
 \</div\>
 
+```
 ```
