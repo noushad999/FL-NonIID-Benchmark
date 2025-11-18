@@ -144,9 +144,10 @@ I actively welcome feedback from the research community\!
 
 -----
 
-\<div align="center"\>
-\<sub\>Built with ❤️ by \<a href="https://www.google.com/search?q=https://github.com/noushad999"\>Noushad Jahan Ramim\</a\> using PyTorch & XGBoost\</sub\>
-\</div\>
+<br />
+<div align="center">
+  <sub>Built with ❤️ by <a href="https://github.com/noushad999" target="_blank">Noushad Jahan Ramim</a> using PyTorch & XGBoost</sub>
+</div>
 
 ```
 ```
