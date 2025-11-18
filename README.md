@@ -1,129 +1,149 @@
-# FL-NonIID-Benchmark
-
-<div align="center">
-  <a href="https://github.com/noushad999/FL-NonIID-Benchmark">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2463EB&center=true&vCenter=true&width=500&lines=Federated+Learning+Benchmark;FedProx+vs.+FedAvg+Analysis;Quantifying+the+Cost+of+Privacy;Robustness+on+Non-IID+Data" alt="Typing SVG" />
-  </a>
-</div>
-
-<div align="center">
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/noushad999/FL-NonIID-Benchmark/blob/main/FL_NonIID_Benchmark.ipynb)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?logo=pytorch&logoColor=white)
-![License](https://img.shields.io/github/license/noushad999/FL-NonIID-Benchmark?style=flat)
-![Repo Size](https://img.shields.io/github/repo-size/noushad999/FL-NonIID-Benchmark)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-</div>
-
----
-
-## 📖 What is this Project?
-
-This project builds a **Privacy-Preserving AI System** designed to detect cyber-attacks in **IoT (Internet of Things)** networks without compromising user privacy.
-
-It benchmarks **Federated Learning (FL)** algorithms against the harsh reality of **Non-IID (messy, distributed)** data. We answer a critical question:
-> *When does the robust `FedProx` algorithm actually beat the standard `FedAvg`, and what performance do we sacrifice for privacy?*
-
----
-
-## 📊 Visualizing the Challenge
-
-### The "Tipping Point" (Live Training)
-Watch how **FedProx** (Green) successfully learns in an extreme Non-IID environment ($\alpha=0.1$), while the standard **FedAvg** (Red) struggles to converge.
+# FL-NonIID-Benchmark 🚀
 
 <p align="center">
-  <img src="images/training_comparison_fixed.gif" alt="Live Training Comparison" width="700">
+  <a href="https://github.com/noushad999/FL-NonIID-Benchmark">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2463EB&center=true&vCenter=true&width=500&lines=Federated+Learning+Benchmark;FedProx+vs.+FedAvg+Analysis;Quantifying+Privacy+Tradeoffs;Non-IID+Challenge+in+IoT+Anomaly+Detection" alt="Typing SVG">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/noushad999/FL-NonIID-Benchmark/blob/main/FL_NonIID_Benchmark.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/PyTorch-2.0-EE4C2C?logo=pytorch&logoColor=white">
+  <img src="https://img.shields.io/github/license/noushad999/FL-NonIID-Benchmark?style=flat">
+  <img src="https://img.shields.io/github/repo-size/noushad999/FL-NonIID-Benchmark">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
+  </a>
 </p>
 
 ---
 
-## 💡 Key Research Findings (The "Novelty")
+## 📚 Overview
 
-Our comprehensive benchmark on the **TON_IoT** dataset revealed three critical insights:
+**FL-NonIID-Benchmark** is a privacy-preserving AI system for cyber-attack detection in IoT (Internet of Things) networks.  
+It **benchmarks Federated Learning (FL) algorithms** on *realistic, non-IID distributed data*, asking:
 
-| Finding Category | Discovery | Impact |
-| :--- | :--- | :--- |
-| **🏆 The Benchmark** | Centralized **XGBoost (F1 0.9962)** beats all Deep Learning models. | Establishes the true "Gold Standard". |
-| **💸 Cost of Privacy** | FL (`FedAvg`) drops to **F1 0.9388** vs Centralized. | Privacy costs **~5.74%** performance loss. |
-| **📈 The Tipping Point** | `FedProx` only wins at **$\alpha=0.1$** (Extreme Non-IID). | Shows `FedProx` is a specialized tool, not universal. |
-| **🐞 Failure Analysis** | `FedProx` crashes (**F1 0.00**) at moderate skew ($\alpha=0.5$). | Highlights critical hyperparameter sensitivity. |
+> **When does the robust [`FedProx`] algorithm actually outperform the classic [`FedAvg`]? What performance do we trade for better privacy?**
 
 ---
 
-## 🛠️ Tech Stack
+## 🔍 Visualizing the Non-IID Challenge
 
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-%23EB4C4C.svg?style=for-the-badge&logo=xgboost&logoColor=white)
+Watch **FedProx** (Green) thrive where **FedAvg** (Red) struggles ($\alpha=0.1$, extreme Non-IID):
+
+<p align="center">
+  <img src="images/training_comparison.gif" alt="Live Training Comparison" width="700">
+</p>
+
+---
+
+## 🌟 Key Findings
+
+| Category | Discovery | Impact |
+|:---------|:----------|:-------|
+| 🏆 **Benchmark**      | Centralized **XGBoost (F1 0.9962)** outperforms Deep Learning | Sets the “Gold Standard” baseline |
+| 💸 **Cost of Privacy**| FL’s `FedAvg` drops to **F1 0.9388** | ~5.74% performance loss for privacy |
+| 📈 **Tipping Point**  | `FedProx` *only* wins at **α = 0.1** (extreme Non-IID) | Shows `FedProx` is only optimal at extreme skew |
+| 🐞 **Failure**        | `FedProx` crashes (*F1 0.00*) at moderate skew (α=0.5) | Indicates strong hyperparameter sensitivity |
+
+---
+
+## 🛠 Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white">
+  <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white">
+  <img src="https://img.shields.io/badge/XGBoost-%23EB4C4C.svg?style=for-the-badge&logo=xgboost&logoColor=white">
+</p>
 
 ---
 
 ## 🚀 Quick Start
 
-### Option 1: Google Colab (Recommended)
-The fastest way to reproduce the results (including the animations) is to run the notebook directly in the browser.
+### ▶️ Option 1: Google Colab (Recommended)
 
-<a href="https://colab.research.google.com/github/noushad999/FL-NonIID-Benchmark/blob/main/FL_NonIID_Benchmark.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="30"/>
-</a>
+Run everything (including animations) instantly in your browser:
 
-### Option 2: Local Installation
-If you prefer running it locally:
+<p align="center">
+  <a href="https://colab.research.google.com/github/noushad999/FL-NonIID-Benchmark/blob/main/FL_NonIID_Benchmark.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" height="38">
+  </a>
+</p>
+
+---
+
+### 💻 Option 2: Local Installation
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/noushad999/FL-NonIID-Benchmark.git](https://github.com/noushad999/FL-NonIID-Benchmark.git)
+git clone https://github.com/noushad999/FL-NonIID-Benchmark.git
 cd FL-NonIID-Benchmark
 
-# 2. Create and activate a virtual environment
+# 2. Create & activate a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the benchmark
-# Note: Ensure the dataset is downloaded as per the notebook instructions
+# 4. Run the benchmark notebook (download dataset as per notebook instructions)
 jupyter notebook FL_NonIID_Benchmark.ipynb
+```
 
-📂 Project Structure
-<details> <summary>Click to expand directory tree</summary>
+---
+
+## 📂 Project Structure
+
+<details>
+<summary>Click to expand directory tree</summary>
+
+```
 FL-NonIID-Benchmark/
 │
-├── FL_NonIID_Benchmark.ipynb   # 🧠 The Core Logic (Colab Notebook)
+├── FL_NonIID_Benchmark.ipynb   # 🧠 Core notebook
 ├── requirements.txt            # 📦 Dependencies
 ├── .gitignore                  # 🚫 Ignored files
 ├── LICENSE                     # 📜 MIT License
-├── README.md                   # 🏠 Home Page
-│
-└── images/                     # 🎨 Assets
-    ├── training_comparison_fixed.gif
-
+├── README.md                   # 🏠 This file
+└── images/                     # 🎨 Visual assets
+    └── training_comparison_fixed.gif
+```
 </details>
 
-📜 Citation
-If you find this benchmark useful for your research, please consider citing:
+---
+
+## 📜 Citation
+
+If you use our benchmark, please cite:
+
+```bibtex
 @misc{Noushad2025FLBenchmark,
   author = {Noushad Jahan Ramim},
   title  = {A Novel Benchmark of Federated Learning for Non-IID Anomaly Detection},
   year   = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{[https://github.com/noushad999/FL-NonIID-Benchmark](https://github.com/noushad999/FL-NonIID-Benchmark)}}
+  howpublished = {\url{https://github.com/noushad999/FL-NonIID-Benchmark}}
 }
-🤝 Contributing & Feedback
-I actively welcome feedback from the research community!
+```
 
-Found a bug? Open an Issue.
+---
 
-Have an idea? Fork the repo and submit a Pull Request.
+## 🤝 Contributing & Feedback
 
-Just want to say hi? Connect with me on LinkedIn.
+- **Found a bug?** [Open an Issue](https://github.com/noushad999/FL-NonIID-Benchmark/issues).
+- **Feature/Idea?** [Fork & Pull Request](https://github.com/noushad999/FL-NonIID-Benchmark/pulls).
+- **Say hi:** [Connect on LinkedIn](https://www.linkedin.com/in/ramim-noushad).
 
-<br /> <div align="center"> <sub>Built with ❤️ by <a href="https://github.com/noushad999" target="_blank">Noushad Jahan Ramim</a> using PyTorch & XGBoost</sub> </div>
+---
 
-
+<p align="center">
+  <sub>
+    Built with ❤️ by <a href="https://github.com/noushad999" target="_blank">Noushad Jahan Ramim</a> using PyTorch & XGBoost.
+  </sub>
+</p>
