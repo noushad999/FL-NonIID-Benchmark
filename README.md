@@ -1,4 +1,3 @@
-
 # FL-NonIID-Benchmark
 
 <div align="center">
@@ -20,10 +19,11 @@
 
 ---
 
-## 📖 Overview
-This repository hosts the official implementation of the research: **"Quantifying the Cost of Privacy: A Benchmark of Federated vs. Centralized Learning for Non-IID Anomaly Detection."**
+## 📖 What is this Project?
 
-The goal is to stress-test Federated Learning (FL) algorithms against the harsh reality of **Non-IID (Non-Identical and Independently Distributed)** data in IoT networks. We answer:
+This project builds a **Privacy-Preserving AI System** designed to detect cyber-attacks in **IoT (Internet of Things)** networks without compromising user privacy.
+
+It benchmarks **Federated Learning (FL)** algorithms against the harsh reality of **Non-IID (messy, distributed)** data. We answer a critical question:
 > *When does the robust `FedProx` algorithm actually beat the standard `FedAvg`, and what performance do we sacrifice for privacy?*
 
 ---
@@ -41,7 +41,7 @@ Watch how **FedProx** (Green) successfully learns in an extreme Non-IID environm
 
 ## 💡 Key Research Findings (The "Novelty")
 
-Our comprehensive benchmark on the **TON_IoT** dataset revealed three critical insights often overlooked in standard literature:
+Our comprehensive benchmark on the **TON_IoT** dataset revealed three critical insights:
 
 | Finding Category | Discovery | Impact |
 | :--- | :--- | :--- |
@@ -53,7 +53,6 @@ Our comprehensive benchmark on the **TON_IoT** dataset revealed three critical i
 ---
 
 ## 🛠️ Tech Stack
-This project is built using industry-standard tools for reproducibility and performance.
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
@@ -96,8 +95,8 @@ jupyter notebook FL_NonIID_Benchmark.ipynb
 
 ## 📂 Project Structure
 
-<details>
-<summary>Click to expand directory tree</summary>
+\<details\>
+\<summary\>Click to expand directory tree\</summary\>
 
 <br>
 
@@ -113,8 +112,9 @@ FL-NonIID-Benchmark/
 └── images/                     # 🎨 Assets
     ├── training_comparison_fixed.gif
     └── findings_table.png
-</details\>
+```
 
+\</details\>
 
 -----
 
@@ -141,14 +141,13 @@ I actively welcome feedback from the research community\!
 
   * **Found a bug?** Open an [Issue](https://www.google.com/search?q=https://github.com/noushad999/FL-NonIID-Benchmark/issues).
   * **Have an idea?** Fork the repo and submit a Pull Request.
-  * **Just want to say hi?** Connect with me on [LinkedIn](https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH26n5z8YIG6QAAAZqWqt8gcm-nTro5Ayu-P1gU0ZgmAhhXtLtf5Vn-qm23LlggN6aAODkPfp_A9vFWjViks6CszGm7pEBbr8xXDm6sOG172wnJv6DqIO7IiC5tUlaWdX4z9hw=&original_referer=&sessionRedirect=https%3A%2F%2Fbd.linkedin.com%2Fin%2Fiamnoushad).
+  * **Just want to say hi?** Connect with me on [LinkedIn]([https://www.google.com/search?q=https://www.linkedin.com/in/noushad-jahan-ramim/](https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH26n5z8YIG6QAAAZqWqt8gcm-nTro5Ayu-P1gU0ZgmAhhXtLtf5Vn-qm23LlggN6aAODkPfp_A9vFWjViks6CszGm7pEBbr8xXDm6sOG172wnJv6DqIO7IiC5tUlaWdX4z9hw=&original_referer=&sessionRedirect=https%3A%2F%2Fbd.linkedin.com%2Fin%2Fiamnoushad)).
 
 -----
 
-<br />
-<div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/noushad999" target="_blank">Noushad Jahan Ramim</a> using PyTorch & XGBoost</sub>
-</div>
+\<br /\>
+\<div align="center"\>
+\<sub\>Built with ❤️ by \<a href="https://www.google.com/search?q=https://github.com/noushad999" target="\_blank"\>Noushad Jahan Ramim\</a\> using PyTorch & XGBoost\</sub\>
+\</div\>
 
-
-
+```
