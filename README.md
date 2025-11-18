@@ -1,7 +1,7 @@
 # FL-NonIID-Benchmark
 
 <div align="center">
-  <a href="https://git.io/typing-svg">
+  <a href="https://github.com/noushad999/FL-NonIID-Benchmark">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2463EB&center=true&vCenter=true&width=500&lines=Federated+Learning+Benchmark;FedProx+vs.+FedAvg+Analysis;Quantifying+the+Cost+of+Privacy;Robustness+on+Non-IID+Data" alt="Typing SVG" />
   </a>
 </div>
@@ -34,7 +34,7 @@ It benchmarks **Federated Learning (FL)** algorithms against the harsh reality o
 Watch how **FedProx** (Green) successfully learns in an extreme Non-IID environment ($\alpha=0.1$), while the standard **FedAvg** (Red) struggles to converge.
 
 <p align="center">
-  <img src="images/training_comparison.gif" alt="Live Training Comparison" width="700">
+  <img src="images/training_comparison_fixed.gif" alt="Live Training Comparison" width="700">
 </p>
 
 ---
@@ -89,17 +89,9 @@ pip install -r requirements.txt
 # 4. Run the benchmark
 # Note: Ensure the dataset is downloaded as per the notebook instructions
 jupyter notebook FL_NonIID_Benchmark.ipynb
-````
 
------
-## 📂 Project Structure
-
-<details>
-<summary>Click to expand directory tree</summary>
-
-<br>
-
-```text
+📂 Project Structure
+<details> <summary>Click to expand directory tree</summary>
 FL-NonIID-Benchmark/
 │
 ├── FL_NonIID_Benchmark.ipynb   # 🧠 The Core Logic (Colab Notebook)
@@ -110,14 +102,11 @@ FL-NonIID-Benchmark/
 │
 └── images/                     # 🎨 Assets
     ├── training_comparison_fixed.gif
+
 </details>
------
 
-## 📜 Citation
-
+📜 Citation
 If you find this benchmark useful for your research, please consider citing:
-
-```bibtex
 @misc{Noushad2025FLBenchmark,
   author = {Noushad Jahan Ramim},
   title  = {A Novel Benchmark of Federated Learning for Non-IID Anomaly Detection},
@@ -126,25 +115,15 @@ If you find this benchmark useful for your research, please consider citing:
   journal = {GitHub repository},
   howpublished = {\url{[https://github.com/noushad999/FL-NonIID-Benchmark](https://github.com/noushad999/FL-NonIID-Benchmark)}}
 }
-```
+🤝 Contributing & Feedback
+I actively welcome feedback from the research community!
 
------
+Found a bug? Open an Issue.
 
-## 🤝 Contributing & Feedback
+Have an idea? Fork the repo and submit a Pull Request.
 
-I actively welcome feedback from the research community\!
+Just want to say hi? Connect with me on LinkedIn.
 
-  * **Found a bug?** Open an [Issue](https://www.google.com/search?q=https://github.com/noushad999/FL-NonIID-Benchmark/issues).
-  * **Have an idea?** Fork the repo and submit a Pull Request.
-  * **Just want to say hi?** Connect with me on [LinkedIn]([https://www.google.com/search?q=https://www.linkedin.com/in/noushad-jahan-ramim/](https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH26n5z8YIG6QAAAZqWqt8gcm-nTro5Ayu-P1gU0ZgmAhhXtLtf5Vn-qm23LlggN6aAODkPfp_A9vFWjViks6CszGm7pEBbr8xXDm6sOG172wnJv6DqIO7IiC5tUlaWdX4z9hw=&original_referer=&sessionRedirect=https%3A%2F%2Fbd.linkedin.com%2Fin%2Fiamnoushad)).
+<br /> <div align="center"> <sub>Built with ❤️ by <a href="https://github.com/noushad999" target="_blank">Noushad Jahan Ramim</a> using PyTorch & XGBoost</sub> </div>
 
------
 
-```markdown
----
-
-<br />
-<div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/noushad999" target="_blank">Noushad Jahan Ramim</a> using PyTorch & XGBoost</sub>
-</div>
-```
