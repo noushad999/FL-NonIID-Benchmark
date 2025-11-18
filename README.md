@@ -92,11 +92,10 @@ jupyter notebook FL_NonIID_Benchmark.ipynb
 ````
 
 -----
-
 ## 📂 Project Structure
 
-\<details\>
-\<summary\>Click to expand directory tree\</summary\>
+<details>
+<summary>Click to expand directory tree</summary>
 
 <br>
 
@@ -111,10 +110,7 @@ FL-NonIID-Benchmark/
 │
 └── images/                     # 🎨 Assets
     ├── training_comparison_fixed.gif
-    └── findings_table.png
-```
-
-\</details\>
+</details>
 
 -----
 
